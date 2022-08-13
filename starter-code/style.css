@@ -1,3 +1,4 @@
+/* CSS Variables */
 :root {
     --clr-white: #FFFFFF;
     --clr-fusia-300: #FFA7C3;
@@ -9,6 +10,7 @@
     --gradient-purple-pink: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
 }
 
+/* Reset styles */
 * {
     box-sizing: border-box;
 }
@@ -17,6 +19,7 @@ body, h1, h2, h3, p {
     margin: 0;
 }
 
+/* Body & Element Styles */
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-weight: 400;
@@ -26,6 +29,23 @@ body > * {
     padding: 0 1rem;
     max-width: 600px;
     margin: 0 auto;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: #13183F;
+    margin-bottom: 26px;
+}
+
+header {
+    margin-bottom: 46px;
+}
+
+div[role="main"] {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    padding-bottom: 40px;
 }
 
 img {
@@ -53,6 +73,7 @@ footer {
     background: var(--clr-black);
 }
 
+/* Gradients */
 .gradient {
     background: var(--gradient-orange-pink);
 }
@@ -69,6 +90,7 @@ footer {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
 }
 
+/* Utility selectors */
 .flex {
     display: flex;
 }
@@ -85,29 +107,14 @@ footer {
     flex-wrap: wrap;
 }
 
+
+/* Element Classes */
 .banner {
     margin: 1rem auto 38px auto;
 }
 
 .footer {
     padding: 36px 0;
-}
-
-section[role="main"] {
-    background: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-    padding-bottom: 40px;
-}
-
-h1 {
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 50px;
-    color: #13183F;
-    margin-bottom: 26px;
-}
-
-header {
-    margin-bottom: 46px;
 }
 
 .header-desc {

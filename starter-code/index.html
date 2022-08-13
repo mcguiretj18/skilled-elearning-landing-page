@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Skilled e-learning landing page</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Banner -->
@@ -19,33 +21,38 @@
     <img src="assets/logo-dark.svg" alt="Dark Logo">
     <button>Get Started</button>
   </div>
-  
 
-  <!-- Header -->
-  <header>
-    <h1>Maximize skill, minimize budget</h1>
 
-    <p class="header-desc">
-      Our modern courses across a range of in-demand skills will give you the 
-      knowledge you need to live the life you want.
-    </p>
+  <!-- Grid Container -->
+  <!-- mobile 100% for each child; 50% for each child in tablet and desktop -->
+  <div class="grid container">
+    <!-- Header -->
+    <header>
+      <h1>Maximize skill, minimize budget</h1>
 
-    <button class="gradient">Get Started</button>
-  </header>
+      <p class="header-desc">
+        Our modern courses across a range of in-demand skills will give you the
+        knowledge you need to live the life you want.
+      </p>
 
-  <!-- Hero -->
-  <div class="hero">
-    <img src="assets/image-hero-mobile@2x.webp" alt="Hero Image">
+      <button class="gradient">Get Started</button>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero">
+      <img src="assets/image-hero-mobile@2x.webp" alt="Hero Image">
+    </div>
   </div>
 
-  <!-- Main -->
+  <!-- Grid Container -->
+  <!-- mobile 100% for each child; 50% for each child in tablet; 33% for each child in desktop -->
+  <div class="container grid" role="main">
+    <!-- Main -->
     <!-- Card -->
-  <section role="main">
     <div class="card promo">
       <h2>Check out our most popular courses!</h2>
     </div>
-  </section>
-    
+  </div>
 
   <!-- Footer -->
   <footer>
@@ -57,4 +64,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

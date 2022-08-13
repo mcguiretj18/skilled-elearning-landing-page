@@ -1,4 +1,4 @@
-const mainElement = document.querySelector('section[role="main"]');
+const mainElement = document.querySelector('div[role="main"]');
 const cards = [
     {
         icon: 'assets/icon-animation.svg',
