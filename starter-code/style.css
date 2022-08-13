@@ -1,0 +1,76 @@
+:root {
+    --clr-white: #FFFFFF;
+    --clr-fusia-300: #FFA7C3;
+    --clr-fusia-700: #F74780;
+    --clr-grey-700: #83869A;
+    --clr-grey-900: #666CA3;
+    --clr-black: #13183F;
+    --gradient-orange-pink: linear-gradient(180deg, #FF6F48 0.04%, #F02AA6 100%);
+    --gradient-purple-pink: linear-gradient(180deg, #4851FF 0%, #F02AA6 99.92%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    border-radius: 28px;
+    padding: 14px 32px;
+    background: var(--clr-black);
+    color: var(--clr-white);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+
+button:hover {
+    background: var(--clr-grey-900);
+}
+
+footer {
+    background: var(--clr-black);
+}
+
+.gradient {
+    background: var(--gradient-orange-pink);
+}
+
+.gradient:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+}
+
+.gradient-alt {
+    background: var(--gradient-purple-pink);
+}
+
+.gradient-alt:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.content-between {
+    justify-content: space-between;
+}
