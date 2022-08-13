@@ -48,6 +48,10 @@ function generateAndAppend(tagName, parentElement, options) {
             element = document.createElement(tagName);
             element.textContent = options.desc;
             break;
+        case 'button':
+            element = document.createElement(tagName);
+            element.textContent = options.text;
+            break;
         default:
             throw new Error(`Unsupported tag name ${tagName}`);
     }
@@ -56,6 +60,7 @@ function generateAndAppend(tagName, parentElement, options) {
 
 cards.forEach(({ icon, title, desc }) => {
     const card = document.createElement('div');
+    card.classList.add('dynamic-card');
 
     generateAndAppend('img', card, {
         src: icon,
@@ -68,6 +73,10 @@ cards.forEach(({ icon, title, desc }) => {
 
     generateAndAppend('p', card, {
         desc
+    });
+
+    generateAndAppend('button', card, {
+        text: 'Get Started'
     });
 
     mainElement.appendChild(card);
